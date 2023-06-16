@@ -1,0 +1,24 @@
+.accordion {
+  overflow: hidden;
+  position: relative;
+}
+.accordion .summary {
+  background-color: lightcoral;
+  padding-right: 30px;
+  cursor: pointer;
+}
+.accordion .summary::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  right: 4.5px;
+  top: 4.5px;
+}
+.accordion .description {
+  transition: 0.2s max-height ease-in;
+  max-height: 0;
+  background-color: lightblue;
+}/*# sourceMappingURL=styles.css.map */
