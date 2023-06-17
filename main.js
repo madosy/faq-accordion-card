@@ -7,7 +7,8 @@ function showContent(e) {
   e.target.closest(".accordion").classList.toggle("open");
 
   if (accordion.classList.contains("open")) {
-    description.style.maxHeight = description.scrollHeight + "px";
+    description.style.height = description.scrollHeight + 20 + "px";
+    description.style.maxHeight = description.scrollHeight + 20 + "px";
   } else {
     description.style.maxHeight = null;
   }
